@@ -26,5 +26,5 @@ sudo bash initial-setup.sh
 ```
 # To start Forge-Dev environment run
 ```
-bash /forge-dev-kasm-docker.sh
+bash forge-dev-kasm-docker.sh
 ```
