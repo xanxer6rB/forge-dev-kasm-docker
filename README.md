@@ -1,2 +1,2 @@
 # forge-dev-kasm-docker
-A containerized Forge-Dev envirnment
+A containerized Forge-Dev environment
