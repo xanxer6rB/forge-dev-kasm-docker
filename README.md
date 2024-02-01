@@ -24,7 +24,7 @@ After accessing the container in your browser run one of the following command:
 ```
 sudo bash initial-setup.sh
 ```
-and then run
+# To start Forge-Dev environment run
 ```
-bash forge
+bash /forge-dev-kasm-docker.sh
 ```
