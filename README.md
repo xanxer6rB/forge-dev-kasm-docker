@@ -1,7 +1,30 @@
 # forge-dev-kasm-docker
-A containerized Forge-Dev environment
+# A Forge-Dev containerized environment using KasmVNC
 
-To build and run container
-sudo docker system prune -a
-sudo docker build -t forge-kasm .
-sudo docker run -it -p 3000:3000 forge-kasm bash
+# To create the image
+Open a terminal in either forge-dev-kasm-docker folder and run:
+```
+docker build -t forge-kasm .
+```
+
+# To run the container
+After the image is built run:
+```
+docker run -it -p 3000:3000 forge-kasm bash
+```
+
+# To run the container detatched running in the background:
+```
+docker run -d -it -p 3000:3000 forge-kasm bash
+```
+
+# To Access container
+After the container is running, access container at YOUR-IP:3000, localhost:3000 in your web browser.
+After accessing the container in your browser run one of the following command:
+```
+sudo bash initial-setup.sh
+```
+and then run
+```
+bash forge
+```
