@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "This is a script to build a containerized Forge-Dev like environment using KasmVNC."
+echo "This is a script to build a containerized forge-dev like environment using KasmVNC."
 echo "The apps included in the container are: forge-desktop-SNAPSHOT, Tiled - Map Editor and MagicSetEditor2."
 echo "....Initial_setup,...Now updating/upgrading container and installing additional pkgs."
 sudo apt update; apt upgrade -y; apt install -y cmake wget nano bzip2 openjdk-11-jdk jq cmake fuse g++ gcc libboost-dev libboost-all-dev libwxgtk3.0-gtk3-dev libhunspell-dev build-essential checkinstall git
@@ -98,7 +98,7 @@ select fav in "${forge[@]}"; do
         break
            ;;
 	"Quit")
-	    echo " Thank you for using Forge-Dev using KasmVNC"
+	    echo " Thank you for using forge-dev using KasmVNC"
 	    exit
 	    ;;
        *) echo "invalid option $REPLY";;
@@ -108,4 +108,4 @@ done' | cat - /config/forge-dev-kasm-docker.sh > temp && mv temp /config/forge-d
 sudo chmod +x /config/forge-dev-kasm-docker.sh
 
 echo "Setup complete"
-echo "To start Forge-Dev run: bash forge-dev-kasm-docker.sh"
+echo "To start forge-dev environment run: bash forge-dev-kasm-docker.sh"
