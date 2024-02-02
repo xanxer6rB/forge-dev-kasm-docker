@@ -1,5 +1,5 @@
 # forge-dev-kasm-docker
-# A Forge-Dev containerized environment using KasmVNC
+# A forge-dev containerized environment using KasmVNC
 
 # To create the image
 Open a terminal in either forge-dev-kasm-docker folder and run:
@@ -24,7 +24,7 @@ After accessing the container in your browser run one of the following command:
 ```
 sudo bash initial-setup.sh
 ```
-# To start Forge-Dev environment run
+# To start forge-dev environment run
 ```
 bash forge-dev-kasm-docker.sh
 ```
