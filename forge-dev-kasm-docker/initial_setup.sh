@@ -1,16 +1,11 @@
 #!/bin/bash
-echo "This is a script to build a containerized Forge-Dev environment using KasmVNC."
+echo "This is a script to build a containerized Forge-Dev like environment using KasmVNC."
 echo "The apps included in the container are: forge-desktop-SNAPSHOT, Tiled - Map Editor and MagicSetEditor2."
 echo "....Initial_setup,...Now updating/upgrading container and installing additional pkgs."
 sudo apt update; apt upgrade -y; apt install -y cmake wget nano bzip2 openjdk-11-jdk jq cmake fuse g++ gcc libboost-dev libboost-all-dev libwxgtk3.0-gtk3-dev libhunspell-dev build-essential checkinstall git
 sudo apt autoremove -y
 
 echo "INSTALLING MagicSetEditor2"
-
-#sudo apt update; apt upgrade -y
-#sudo apt install -y cmake fuse g++ gcc libboost-dev libboost-all-dev libwxgtk3.0-gtk3-dev libhunspell-dev build-essential checkinstall git
-#sudo apt autoremove -y
-#sudo mkdir /app/mse/MagicSetEditor2
 
 sudo git clone https://github.com/MagicSetEditorPacks/Full-Magic-Pack.git /app/mse/mse-full-pack
 
@@ -113,4 +108,4 @@ done' | cat - /config/forge-dev-kasm-docker.sh > temp && mv temp /config/forge-d
 sudo chmod +x /config/forge-dev-kasm-docker.sh
 
 echo "Setup complete"
-echo "To start Forge-Dev, run ./forge-dev-kasm-docker.sh"
+echo "To start Forge-Dev run: bash forge-dev-kasm-docker.sh"
