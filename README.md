@@ -19,7 +19,7 @@ docker run -d -it -p 3000:3000 forge-kasm bash
 ```
 
 # To Access container
-After the container is running, access container at YOUR-IP:3000, localhost:3000 in your web browser.
+After the container is running, access container, localhost:3000 in your web browser.
 After accessing the container in your browser run one of the following command:
 ```
 sudo bash initial-setup.sh
